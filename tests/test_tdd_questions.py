@@ -19,3 +19,6 @@ class TestEasySolutions(unittest.TestCase):
         self.assertRaises(TypeError, is_zero, {1, 2})
         self.assertRaises(TypeError, is_zero, "I am a string")
 
+    def test_is_prime(self):
+        self.assertTrue(is_prime(1))
+        self.assertFalse(is_prime(4))
