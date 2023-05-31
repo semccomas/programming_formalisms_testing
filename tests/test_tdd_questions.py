@@ -22,3 +22,6 @@ class TestEasySolutions(unittest.TestCase):
     def test_is_prime(self):
         self.assertTrue(is_prime(1))
         self.assertFalse(is_prime(4))
+        self.assertTrue(is_prime(19))
+        self.assertRaise(TypeError, is_prime, 0.4)
+        self.assertRaise(TypeError, is_prime, "test")
